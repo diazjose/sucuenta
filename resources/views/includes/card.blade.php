@@ -1,4 +1,111 @@
 <div class="row">
+    <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Datos de Compras</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                          <thead> 
+                            <tr>
+                              <th>#</th>
+                              <th>Fecha</th>
+                              <th>Monto</th>
+                              <th>Accion</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <td>1</td>
+                              <td>24/04/2020</td>
+                              <td>5.000</td>
+                              <td>
+                                <a href="#" class="btn btn-info btn-circle mx-1">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>15/03/2020</td>
+                              <td>7.500</td>
+                              <td>
+                                <a href="#" class="btn btn-info btn-circle mx-1">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>  
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>02/12/2019</td>
+                              <td>4.750</td>
+                              <td>
+                                <a href="#" class="btn btn-info btn-circle mx-1">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>                                  
+                              </td>
+                            </tr>                            
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-success">Datos de Pagos</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                          <thead> 
+                            <tr>
+                              <th>#</th>
+                              <th>Fecha</th>
+                              <th>Monto</th>
+                              <th>Accion</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <td>1</td>
+                              <td>24/04/2020</td>
+                              <td>1.500</td>
+                              <td>
+                                <a href="#" class="btn btn-danger btn-circle mx-auto">
+                                   <i class="fas fa-trash"></i>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>15/03/2020</td>
+                              <td>2.700</td>
+                              <td>
+                                  <a href="#" class="btn btn-danger btn-circle mx-auto">
+                                    <i class="fas fa-trash"></i>
+                                  </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>02/12/2019</td>
+                              <td>3.500</td>
+                              <td>
+                                <a href="#" class="btn btn-danger btn-circle mx-1 mx-auto">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                              </td>
+                            </tr>                            
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <!-- Content Column -->
             <div class="col-lg-6 mb-4">

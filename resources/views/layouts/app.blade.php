@@ -17,6 +17,7 @@
 
         <!-- Custom styles for this template-->
         <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
   </head>
 
@@ -82,7 +83,10 @@
 
     <!-- Page level custom scripts -->
     <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
+    
+    <!-- System SuCuenta scripts -->
+    <script src="{{ asset('js/client.js') }}"></script>
+    <script src="{{ asset('js/compra.js') }}"></script>
 
   </body>
 

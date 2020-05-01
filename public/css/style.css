@@ -1,0 +1,8 @@
+.card-button{
+	text-decoration: none;
+}
+
+.caja:hover{
+  background-color: #c6c1c1 !important; 
+  margin-top: 2px;
+}

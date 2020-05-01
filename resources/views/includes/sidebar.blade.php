@@ -4,7 +4,6 @@
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <img src="{{ asset('img/sucuenta2.png') }}" width="30">
-        <!--  <i class="fas fa-laugh-wink"></i> -->
         </div>
         <div class="sidebar-brand-text mx-3">SuCuenta <sup>2</sup></div>
       </a>
@@ -27,7 +26,7 @@
         Usuarios
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="#">
           <i class="fa fa-list"></i>
           <span>Listado de Usuarios</span></a>
       </li>
@@ -37,13 +36,13 @@
       </div>
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{route('client.new')}}">
           <i class="fa fa-address-card"></i>
           <span>Añadir Cliente</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="#">
           <i class="fa fa-list"></i>
           <span>Listado de Clientes</span></a>
       </li>
@@ -55,13 +54,13 @@
         Ventas y pagos
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="#">
           <i class="fas fa-calendar fa-2x"></i>
           <span>Ventas</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="#">
           <i class="fas fa-dollar-sign fa-2x "></i>
           <span>Pagos</span></a>
       </li>

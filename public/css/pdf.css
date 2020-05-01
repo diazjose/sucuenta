@@ -1,0 +1,119 @@
+body {
+	/*margin: 0px;
+	padding: 0px;*/
+}
+
+header {
+	height: 70px;
+}
+
+.container{
+    /*text-align:center*/
+    margin: 1px;
+  	padding: 1px;
+  	grid-template-columns: auto auto auto auto;
+	  grid-gap: 10px;
+} 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.text-center{
+	text-align:center;
+}
+.left{
+    float: left;
+    border: 1px solid #FFFFFF;
+}
+
+.right{
+    float: right;
+    border: 1px solid #FFFFFF;
+    text-align: left;
+    display: inline;
+}
+
+.text-white{
+	color: #FFFFFF;
+}
+
+#title-header{
+	font-size: 23px;
+  	line-height: 48px;
+}
+
+#sub {
+	font-size: 17px;
+}
+
+.title{
+	text-align:center;
+}
+
+#logo{
+	width: 260px;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.caja_inline {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#factura{
+	float:left;width: 30%;
+}
+
+#factura p{
+	margin-top: 30px;
+	margin-left: 90px; 
+	font-size: 10px;
+}
+.p{
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+p {
+	
+}
+
+table{
+	width:100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+td {
+	text-align: left;
+	font-size: 13px;
+}
+
+footer {
+    position: fixed; 
+    bottom: 10px; 
+    left: 0px; 
+    right: 0px;
+    height: 50px;
+    text-align: right;
+    line-height: 35px;
+}
