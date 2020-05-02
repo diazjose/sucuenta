@@ -32,9 +32,16 @@ Route::get('/compras/boleta/{id}', 'FacturasController@boleta')->name('compra.bo
 Route::post('/compras/edit-prenda', 'FacturasController@editarPrenda')->name('compra.editPrenda');
 Route::post('/compras/eliminar-prenda', 'FacturasController@deletePrenda')->name('compra.eliminarPrenda');
 
+/*PAGOS*/
+Route::get('/pagos/{id}', 'PagosController@index')->name('pago.index');
+Route::post('/pagos/registrar', 'PagosController@register')->name('pago.register');
+Route::post('/pagos/edit-pago', 'PagosController@editarPago')->name('compra.editPago');
+Route::post('/pagos/eliminar-pago', 'PagosController@deletePago')->name('pago.delete');
+
 
 /*REPORTES*/
 Route::get('/imprimir', 'ReportesController@imprimir')->name('print');
 Route::get('/imprimir-boleta/{id}', 'ReportesController@boleta')->name('pdf.boleta');
+Route::get('/imprimir-pago/{id}', 'ReportesController@pago')->name('pdf.pago');
 
 

@@ -15,8 +15,12 @@ class Cuenta extends Model
     public function cliente(){
     	return $this->belongsTo('App\Cliente', 'cliente_id', 'id'); 
     }
+    
     public function facturas(){
     	return $this->hasMany('App\Factura')->orderBy('id', 'DESC'); 
+    }
 
+    public function pagos(){
+        return $this->hasMany('App\Pago')->orderBy('id', 'DESC'); 
     }
 }

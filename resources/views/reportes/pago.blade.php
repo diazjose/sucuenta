@@ -12,9 +12,8 @@
 	
 	<body>
 		<header>
-            <div>
-                <div style="float:left;width: 30%;"></div>
-                <div style="float:left;width: 40%;">
+            <div class="">
+                <div class="caja_inline-logo">
                     <div class="text-center">
                         <div id="title-header">
                             <span><strong>RANEL</strong></span>
@@ -24,12 +23,14 @@
                             <p class="p">Telefono: 3804-777835 - Email: ranel@gmail.com</p>
                             <p class="p">Facebook : RANEL</p>  
                         </div>
-                    </div>    
-                </div>  
-                <div id="factura">
-                    <h5 style="margin-left: 40px;margin-bottom: 0px; "><strong>COMPRA N° 00111000111</h5></strong>
-                    <p style="margin-top: 1px;margin-left: 10px " class="p">Comprobante interno, No Valida como factura</p>
-                </div>  
+                    </div>
+                </div>
+                <div class="caja_inline-recibo">
+                    <div class="">
+                        <h4 style="margin-left: 188px;margin-bottom: 0px; margin-top: 0px; "><strong>RECIBO DE PAGO</h4></strong>
+                        <p style="margin-top: 1px;margin-left: 163px " class="p">Comprobante interno, No Valida como factura</p>
+                    </div>
+                </div>        
             </div>
         </header>
         <hr>
@@ -38,26 +39,21 @@
                 <h4 style="margin-bottom: 0px;">DATOS DE CLIENTE</h4>
                 <p style="margin-top: 12px; font-size: 14px;">
                     <strong>Nombre:</strong>
-                    {{$factura->cuenta->cliente->apellido}} {{$factura->cuenta->cliente->nombre}}
+                    {{$pago->cuenta->cliente->apellido}} {{$pago->cuenta->cliente->nombre}}
                 </p>
                 <p style="margin-top: 12px; font-size: 14px;">
                     <strong>DNI:</strong>
-                    {{$factura->cuenta->cliente->dni}}
+                    {{$pago->cuenta->cliente->dni}}
                 </p>
             </div>
             <div class="caja_inline">
-                <h4 style="margin-bottom: 0px;">DATOS DE COMPRA</h4>
+                <h4 style="margin-bottom: 0px;">DATOS DE PAGO</h4>
                 <p style="margin-top: 12px; font-size: 14px;">
                     <strong>Fecha:</strong>
-                    {{$factura->created_at->format('d/m/Y')}}
+                    {{$pago->created_at->format('d/m/Y')}}
                 </p>
                 <p style="margin-top: 12px; font-size: 14px;">
-                    <strong>Cantidad de Prendas:</strong>
-                    @php($cant = 0)
-                    @foreach($factura->productos as $producto)
-                    @php($cant = $cant + $producto->cantidad)
-                    @endforeach
-                    {{$cant}}
+                    <strong>Forma de Pago:</strong>
                 </p>
             </div>  
         </div>
@@ -65,32 +61,17 @@
         <table class="table text-center" id="dataTable" width="100%" cellspacing="0" style="margin-top: 0px; ">
             <thead> 
                 <tr>
-                    <th>Cantidad</th>
-                    <th>Descripcion</th>
-                    <th>Precio Uni.</th>
-                    <th>Importe</th>
+                    <th>DESCRIPCION</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($factura->productos as $producto)
                 <tr>
-                    <td>{{$producto->cantidad}}</td>
-                    <td>{{$producto->denominacion}}</td>
-                    <td>{{$producto->valor}}</td>
-                    @php($importe = $producto->valor*$producto->cantidad)
-                    <td>{{ $importe }}</td>
+                    <td>Importe de Pago</td>
+                    <td>$ {{ $pago->valor }}</td>
                 </tr>
-                @endforeach
             </tbody>
-                <tr class="border-none">
-                    <td></td>
-                    <td></td>
-                    <th>Total: </th>
-                    <th>{{$factura->valor}}</th>
-                </tr> 
-        </table>  
-        <footer>
-            <p>Comprobante interno, No Valida como factura</p>
-        </footer>
+        </table> 
+        <br><hr>
 	</body>
 </html>

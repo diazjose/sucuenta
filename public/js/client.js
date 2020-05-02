@@ -5,7 +5,9 @@ window.addEventListener("load", function(){
 		$(location).attr('href',url);
 	});
 	$("#pago").click(function(){
-		alert('pago');	
+		var	cuenta = $("#cuenta").val();
+		var url = 'http://localhost/sucuenta/public/pagos/'+cuenta;
+		$(location).attr('href',url);
 	});
 	$("#editar").click(function(){
 		alert('editar');	

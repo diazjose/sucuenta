@@ -88,7 +88,15 @@ function editPrenda(id,prenda,cantidad,precio){
 	$("#precio").val(precio);
 }
 
+function editPago(id,monto){
+	$("#pago").val(id);
+	$("#monto").val(monto);
+}
+
 function deletePrenda(id){
 	$("#e-producto").val(id);
+}
+function deletePago(id){
+	$("#e-pago").val(id);
 }
 

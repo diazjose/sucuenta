@@ -9,6 +9,15 @@
                 </h1>
             </div>
              <hr> 
+             @if($cliente->cuenta->valor<1)  
+            <div class="alert alert-success">
+                <strong><i class="far fa-grin-wink"></i> <i class="fas fa-thumbs-up"></i> ¡¡ No Registra Deuda !!</strong>
+            </div>  
+            @else
+            <div class="alert alert-danger">
+                <strong><i class="far fa-frown"></i> <i class="fas fa-thumbs-down"></i> ¡¡ Registra Deuda !!</strong>
+            </div>
+            @endif   
               <div class="row">
                 <!-- Earnings (Monthly) Card Example -->
                 
@@ -97,14 +106,14 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 mb-4">
-                <div class="card border-bottom-warning shadow h-100 py-2">
+                <div class="card border-bottom-danger shadow h-100 py-2">
                     <div class="card-header">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                              <div class="h5 mb-0 font-weight-bold text-warning">Deuda</div>
+                              <div class="h5 mb-0 font-weight-bold text-danger">Deuda</div>
                             </div>
                             <div class="col-auto">
-                              <i class="fas fa-exclamation-triangle fa-2x text-warning"></i>
+                              <i class="fas fa-comment-dollar fa-2x text-danger"></i>
                             </div>
                           </div>
                     </div>
