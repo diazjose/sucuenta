@@ -10,6 +10,8 @@ window.addEventListener("load", function(){
 		$(location).attr('href',url);
 	});
 	$("#editar").click(function(){
-		alert('editar');	
+		var	cuenta = $("#cliente").val();
+		var url = 'http://localhost/sucuenta/public/editar-cliente/'+cuenta;
+		$(location).attr('href',url);	
 	});
 });

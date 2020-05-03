@@ -23,6 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/cliente-nuevo', 'ClientesController@new')->name('client.new');
 Route::post('/cliente-create', 'ClientesController@create')->name('client.create');
 Route::get('/ver-cliente/{id}', 'ClientesController@view')->name('client.view');
+Route::get('/editar-cliente/{id}', 'ClientesController@edit')->name('client.edit');
+Route::post('/update-cliente', 'ClientesController@update')->name('client.apdate');
 
 /*FACTURAS*/
 Route::get('/compras/{id}', 'FacturasController@index')->name('compra.index');

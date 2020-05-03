@@ -6,6 +6,7 @@
                 <h1 class="h3 mb-0 text-gray-800">
                     <strong>CLIENTE N° #{{$cliente->dni}} - ({{$cliente->nombre}} {{$cliente->apellido}})</strong>
                     <input type="hidden" id="cuenta" value="{{$cliente->cuenta->id}}">
+                    <input type="hidden" id="cliente" value="{{$cliente->id}}">
                 </h1>
             </div>
              <hr> 
@@ -72,7 +73,12 @@
         <hr>
         <!-- TABLE -->
         <div class="row my-5">
-            <div class="col-xl-8 col-md-6 mb-4">           
+            <div class="col-xl-8 col-md-6 mb-4">  
+                @if(session('message'))
+                    <div class="alert alert-{{ session('status') }}">
+                        <strong>{{ session('message') }}</strong>
+                    </div>  
+                @endif            
                 <div class="card shadow mb-4 border-bottom-info">
                     <div class="card-header">
                         <div class="row no-gutters align-items-center">
