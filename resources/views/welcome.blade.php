@@ -43,7 +43,7 @@
                     <div class="text-center">
                       <h1 class="h4 text-gray-900 mb-4">
                         ¡Bienvenidos a <img src="{{ asset('img/sucuenta2.png') }}" width="30">
-                        <span><strong class="text-primary">SuCuenta</strong></span>!
+                        <span><strong class="text-primary">SuCuenta<sup>2</sup></strong></span>!
                       </h1>
                     </div>
                     <form class="user" method="POST" action="{{ route('login') }}">
