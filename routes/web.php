@@ -25,6 +25,8 @@ Route::post('/cliente-create', 'ClientesController@create')->name('client.create
 Route::get('/ver-cliente/{id}', 'ClientesController@view')->name('client.view');
 Route::get('/editar-cliente/{id}', 'ClientesController@edit')->name('client.edit');
 Route::post('/update-cliente', 'ClientesController@update')->name('client.apdate');
+Route::get('/buscar-clientes', 'ClientesController@list')->name('client.list');
+Route::get('/alerta-clientes', 'ClientesController@alert')->name('client.alert');
 
 /*FACTURAS*/
 Route::get('/compras/{id}', 'FacturasController@index')->name('compra.index');

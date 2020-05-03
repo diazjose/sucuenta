@@ -42,9 +42,9 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa fa-list"></i>
-          <span>Listado de Clientes</span></a>
+        <a class="nav-link" href="{{route('client.list')}}">
+          <i class="fas fa-search"></i>
+          <span>Buscar Clientes</span></a>
       </li>
 
       <hr class="sidebar-divider">

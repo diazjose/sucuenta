@@ -23,4 +23,8 @@ class Cuenta extends Model
     public function pagos(){
         return $this->hasMany('App\Pago')->orderBy('id', 'DESC'); 
     }
+
+    public function ultimoPago(){
+        return $this->hasOne('App\Pago');
+    }
 }

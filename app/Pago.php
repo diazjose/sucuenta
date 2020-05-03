@@ -14,6 +14,5 @@ class Pago extends Model
 
     public function cuenta(){
     	return $this->belongsTo('App\Cuenta', 'cuenta_id');
-
     }
 }

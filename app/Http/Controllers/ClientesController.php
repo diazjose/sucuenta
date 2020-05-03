@@ -86,4 +86,16 @@ class ClientesController extends Controller
                          ->with(['message' => 'Cliente Editado correctamente', 'status' => 'success']);
 
     }
+
+    public function list(){
+        $clientes = Cliente::orderBy('apellido')->get();
+        return view('clientes.search', ['clientes' => $clientes]); 
+    }
+
+    public function alert(){
+        $fecha_actual = date("d-m-Y");
+        $fecha  = date("d-m-Y",strtotime($fecha_actual."- 30 days")); 
+        $clientes = Cuenta::where('valor','>',0)->get();
+        return view('clientes.alert', ['clientes' => $clientes, 'fecha' => $fecha]); 
+    }
 }   
